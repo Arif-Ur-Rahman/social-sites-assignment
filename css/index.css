@@ -1,0 +1,143 @@
+
+h1 {
+    font-size: 5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+a {
+    
+    text-align: center;
+}
+button {
+    cursor: pointer;
+    border: none;
+    background-color: #e3cccc;
+    color: #887f7f;
+    padding: 10px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #827777;
+}
+.shortcuts {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 150px;
+    list-style: none;
+    width: auto;
+    height: 500px;
+    position: relative;
+    left: 80px;
+   
+  
+}
+.shortcuts li {
+    position: relative;
+    flex: 1 1 calc(25% - 20px);
+    text-align: center;
+
+}
+.shortcuts a {
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    width: 112px;
+    padding: 16px 8px 12px;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+}
+.shortcuts li:hover a {
+    background-color:  rgba(60, 64, 67, 0.16);
+}
+
+.more {
+    
+    position: absolute;
+    top: 4px;
+    left: 80px;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.15s, background-color 0.15s;
+
+    
+}
+.shortcuts li:hover .more,
+.more:focus-visible {
+    opacity: 1;
+}
+.more:hover {
+    background-color: rgba(60, 64, 67, 0.16);
+}
+
+.more img {
+    width: 16px;
+    height: 16px;
+
+}
+.tile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color:  #eef0f5;
+
+    
+
+
+}
+.tile img {
+    width: 24px;
+    height: 24px;
+}
+.label {
+    width: 100%;
+    margin-top: 12px;
+    font-size: 13px;
+    text-align: center;
+    white-space: nowrap;
+  
+    
+    
+  
+}
+/* =========================
+   Responsive Design
+========================= */
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .shortcuts {
+        margin: 20px;
+        left: 0;
+        height: auto;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .shortcuts li {
+        flex: 1 1 calc(50% - 20px);
+    }
+
+    .shortcuts a {
+        width: 100px;
+    }
+
+}
+ 
