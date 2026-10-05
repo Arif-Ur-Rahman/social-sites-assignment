@@ -1,0 +1,345 @@
+/* =========================
+   Facebook Page
+========================= */
+
+.facebook-page {
+    min-height: 100vh;
+    display: flex;
+    position: relative;
+    border: 1px solid #ccc;
+}
+
+
+/* =========================
+   Back to Home
+========================= */
+
+.back-home {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #0f03fa;
+    text-decoration: none;
+    font-size: 16px;
+}
+.back-home:hover {
+    text-decoration: underline;
+}
+
+
+
+/* =========================
+   Left Section
+========================= */
+
+.facebook-left {
+    width: 57%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-right: 3px solid #ccc;
+}
+
+.facebook-logo-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: flex-start;
+    gap: 120px;
+}
+/* Facebook Logo */
+
+.facebook-logo img {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+
+/* Explore Text */
+
+.explore-text {
+    margin-top: 20px;
+    text-align: flex-start;
+}
+
+.explore-text p {
+    margin: 10px;
+    font-size: 60px;
+    line-height: 1.00;
+    font-weight: 650;
+}
+
+.explore-text .love-text {
+    font-weight: 650;
+    color: #1877f2;
+}
+.dot-style {
+    color:#293037
+}
+
+
+/* Facebook Illustration */
+
+.facebook-illustration {
+    margin-top: -50px;
+}
+
+.facebook-illustration img {
+    width: 640px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+/* =========================
+   Right Section
+========================= */
+
+.facebook-right {
+    width: 43%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login-container {
+    width: 580px;
+    padding: 20px;
+}
+.login-container h1 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: flex-start;
+
+}
+.login-container input {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    font-size: 14px;
+    
+}
+.login-container input:focus {
+    outline: none;
+    border-color: #808284;
+    box-shadow: 0 0 5px rgba(157, 163, 171, 0.5);
+}
+.login-container form button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 50px;
+    background-color: #0505fb;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+
+
+
+}
+.login-container form button:hover {
+    background-color: #4c41ca;
+}
+.forgot-password {
+    display: block;
+    margin-top: 25px;
+    text-align: center;
+    color: #0e141a;
+    font-size: 16px;
+    text-decoration: none;
+
+}
+
+.forget-button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 50px;
+    background-color: #f7f8f7;
+    color:hsl(240, 4%, 5%);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 60px;
+    border:none;
+}
+.forget-button:hover {
+    text-decoration: underline;
+    background-color: #ebe8e8;
+}
+
+.forget-button:hover {
+    text-decoration: underline;
+}
+.create-account {
+    width: 100%;
+    padding: 12px;
+    border-radius: 50px;
+    background-color: #f7f8f7;
+    color:hsl(243, 98%, 49%);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 60px;
+    border: 1px solid #ccc;
+}
+/* Meta Brand */
+.meta-brand {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    margin-top: 10px;
+}
+.meta-logo {
+    width: 23px;
+    height: 23px;
+   
+}
+.facebook-footer {
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+.footer-languages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-bottom: 12px;
+    
+
+}
+.footer-languages a {
+    color: #66686b;
+    font-size: 14px;
+    text-decoration: none;
+}
+.footer-languages a:hover {
+    text-decoration: underline;
+}
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    
+    margin-top: 10px;
+    
+    
+}
+.footer-links a {
+    color: #5b5d60;
+    font-size: 14px;
+    text-decoration: none;
+}
+.footer-links a:hover {
+    text-decoration: underline;
+}
+.footer-links + .footer-links {
+    margin-top: 6px;
+}
+/* Mobile */
+@media (max-width: 600px) {
+
+    .facebook-page {
+        min-height: auto;
+    }
+
+    .back-home {
+        top: 15px;
+        left: 15px;
+        font-size: 14px;
+    }
+
+    /* Left Section */
+    .facebook-left {
+        flex-direction: column;
+        padding: 70px 20px 40px;
+    }
+
+    .facebook-logo-text {
+        gap: 25px;
+        width: 100%;
+    }
+
+    .facebook-logo img {
+        width: 45px;
+        margin-left: 0;
+    }
+
+    .explore-text {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .explore-text p {
+        margin: 5px;
+        font-size: 38px;
+    }
+
+    .facebook-illustration {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .facebook-illustration img {
+        width: 100%;
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    /* Right Section */
+    .facebook-right {
+        padding: 30px 15px;
+    }
+
+    .login-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .login-container h1 {
+        font-size: 17px;
+    }
+
+    .login-container input {
+        box-sizing: border-box;
+        padding: 17px;
+        font-size: 14px;
+    }
+
+    .login-container form button {
+        padding: 12px;
+    }
+
+    .forget-button,
+    .create-account {
+        margin-top: 30px;
+    }
+
+    /* Footer */
+    .facebook-footer {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 25px 15px;
+    }
+
+    .footer-languages,
+    .footer-links {
+        gap: 10px;
+    }
+
+    .footer-languages a,
+    .footer-links a {
+        font-size: 12px;
+    }
+}
+
+
+
