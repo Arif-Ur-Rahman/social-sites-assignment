@@ -3,13 +3,445 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Linkedin</title>
+    <title>Linkedin Home</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/linkedin.css">
 </head>
 <body>
-    <h1>Linkedin Page</h1>
+    
     <a href="index.html">← Back to Home</a>
+    <!-- Top Navigation -->
+     <header class="site-header">
+        <div class="nav-container">
+            <!-- LinkedIn Logo and Search -->
+             <div>
+                <a href="linkedin.html" class="brand">
+                    <img src="images/logo-linkedin.svg" alt="Linkedin">
+                </a>
+                <form class="search-form" role="search">
+                    <img src="images/search.svg" alt="">
+                    <input
+                       type="search"
+                       name="search"
+                       placeholder="Search"
+                       aria-label="Search LinkedIn"
+                      >
+                </form>
+
+             </div>
+             <!-- Main Navigation -->
+              <nav class="main-navigation" aria-label="Main navigation">
+                <ul class="nav-lists">
+                    <li class="nav-item active">
+                        <a href="linkedin.html" aria-current="page">
+                            <img src="images/home-sharp.svg" alt="LinkedIn Home">
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="linkedin.html">
+                            <img src="images/akar-icons--people-group.svg" alt="Network Group">
+                            <span>Network</span>
+                        </a>
+                    </li>
+                     <li class="nav-item">
+                        <a href="linkedin.html">
+                            <img src="images/briefcase.png" alt="jobs brifcase">
+                            <span>Jobs</span>
+                        </a>
+                    </li>
+                     <li class="nav-item">
+                        <a href="linkedin.html">
+                            <img src="images/hat-bubble.png" alt="messaging icon">
+                            <span>Messaging</span>
+                        </a>
+                    </li>
+                     <li class="nav-item">
+                        <a href="linkedin.html">
+                            
+                            <span class="notification-icon">
+                                <img src="images/bell.png" alt="Notificatios Icon">
+                                <span class="notificatios-count">5</span>
+
+                            </span>
+                            
+                            <span>Notifications</span>
+                        </a>
+                    </li>
+            
+                    <li class="nav-item">
+                        <a href="linkedin.html">
+                            <img class="nav-profile-pic" src="images/profile-pic.jpeg" alt="Nav Profile Pic">
+                            <span>Me <span class="dropdown-arrow">▼</span></span>
+
+                        </a>
+                    </li>
+                    <li class="nav-item business-navigation">
+                        <a href="linkedin.html">
+                            <img src="images/grid.svg" alt="Business">
+                            <span>For Business <span class="dropdown-arrow">▼</span></span>
+                        </a>
+                    </li>
+                    <li class="nav-item premium-navigation">
+                        <a href="linkedin.html">
+                            <img src="images/icons8-premium-48.png" alt="Premium">
+                            <span>Try Premium for ৳0</span>
+                        </a>
+                    </li> 
+                </ul>
+             </nav>
+        
+       </div>
+
+     </header>
+     <!-- Main Page container -->
+    <div class="main-container">
+        <!-- LEFT SIDEBAR -->
+         <aside class="left-sidebar" aria-label="Profile and shortcuts">
+            <!-- Profile Card -->
+            <section class="profile-card">
+                <div class="profile-cover">
+                    <img src="images/cover-photo.png" alt="profile cover" class="cover-image">
+                </div>
+                <div>
+                     <a href="linkedin.html">
+                        <img class="profile-picture" src="images/profile-pic.jpeg" alt="Jabir Chowdhury">
+                    </a>
+                    <h1>Jabir Chowdhury</h1>
+                    <p class="profile-headline">
+                       Aspiring Full-Stack Web Developer | <br> Learning JavaScript, React, Next.js...
+                    </p>
+                    <p class="profile-location">Dhaka, Dhaka</p>
+                    <a href="linkedin.html" class="business-profile">
+                        <img src="images/icons8-fiverr-48.png" alt="">
+                        <span>Fiverr and Upwork <br>Freelancers (Buyers and Sellers)</span>
+
+                    </a>
+
+                </div>
+            </section>
+             <!-- Premium promotion Card --> 
+            <section class="sidebar-premium-card">
+                  <p>Grow your connections and get ahead</p>
+                  <a href="#">Try Premium for ৳0</a> 
+            </section>
+                <!-- Connections Card --> 
+            <section class="connections-card"> 
+                  
+                    
+                    <a href="#" class="connections-link">
+                          <span>Connections</span> 
+
+                          <span class="connections-count">26</span>
+                    </a>
+                    <p>Grow your network</p>  
+            </section>
+           
+                 <!-- Shortcuts Card -->
+            <section class="shortcuts-card">
+                <ul class="shortcuts-list">
+                   <li>
+                      <a href="https://www.linkedin.com/my-items/saved-posts/">
+                       <img src="images/ooui--bookmark-list-ltr.svg" alt="">
+                       <span>Saved items</span>
+                      </a>
+                   </li>
+
+                   <li>
+                      <a href="https://www.linkedin.com/groups/">
+                       <img src="images/akar-icons--people-group.svg" alt="">
+                       <span>Groups</span>
+                      </a>
+                   </li>
+
+                   <li>
+                      <a href="https://www.linkedin.com/mynetwork/network-manager/newsletters/">
+                       <img src="images/majesticons--article-line.svg" alt="">
+                       <span>Newsletters</span>
+                     </a>
+                   </li>
+
+                   <li>
+                      <a href="https://www.linkedin.com/events/">
+                       <img src="images/calendar2-event.svg" alt="">
+                       <span>Events</span>
+                      </a>
+                   </li>
+               </ul>
+            </section>
+
+            
+
+         </aside>
+        <!-- Middle Column / Main Feed -->
+         <main class="main-feed">
+             <!-- Premium Advertisement Card -->
+            <section class="premium-promotion-card">
+
+              <button type="button" class="close-button" aria-label="Dismiss Promossion">
+                  ×
+              </button>
+              <div class="promotion-content">
+                <h2>
+                    80% of professionals find networking key
+                    to career success.
+                </h2>
+                <p>Grow your connections with Premium.</p>
+                <a href="linkedin.html" class="try-premium-button">
+                    Try Premium for ৳0
+                </a>
+                <p class="premium-disclaimer">1-month free trial. Cancel anytime.</p>
+                
+
+              </div>
+              <div class="promotion-image">
+                <img src="images/profile-pic.jpeg" alt="premium member profile">
+                <img src="images/bi--linkedin.svg" alt="">
+
+              </div>
+           </section>
+           <!-- Create Post Card -->
+           <section class="features">
+            <div class="ui-profile-picture">
+                <img class="my-profile-picture" src="images/profile-pic.jpeg" alt="My Profile">
+                <button class="start-a-post" type="button">
+                    Start a post
+                </button>
+            </div>
+            <div class="post-option">
+                <button type="button" class="post-options">
+                    <img src="images/icons8-video-48.png" alt="">
+                    <span>Video</span>
+                </button>
+                <button type="button" class="post-options">
+                    <img src="images/heroicons--photo-16-solid.svg" alt="">
+                    <span>Video</span>
+                </button>
+                <button type="button" class="post-options">
+                    <img src="images/majesticons--article-line.svg" alt="">
+                    <span>Write Article</span>
+
+                </button>
+
+
+            </div>
+
+           </section>
+            <!-- Feed Sorting -->
+             <div>
+                <span class="sorting-line"></span>
+                <button>
+                    Sort by: <strong>Top</strong>
+                    <span class="dropdown-arrow">⌄</span>
+                </button>
+             </div>
+            <!-- Feed Post -->
+             <article class="Feed post">
+                 <!-- Post Header -->
+                  <header class="feed-post-header">
+                    <a href="index.html" class="post-author-link">
+
+                        <img class="post-author-picture" src="images/user-profile.svg" alt="HM Nayem">
+                    </a>
+                    <div class="post-author-information">
+                        <div class="post-author-name">
+                            <a href="index.html">HM Nayem</a>
+                            <img src="images/ic--outline-verified-user.svg" alt="verified">
+                            <span>. Following</span>
+                        </div>
+                        <p class="post-author-headline">
+                            Director of Engineering @Toptal ·
+                            Founder @StackLearner · I help founder...
+                        </p>
+                        <p class="post-date">Oct 7</p>
+
+                    </div>
+                    <div class="post-header-actions">
+                        <button>
+                            <img src="images/more.svg" alt="More post action">
+                        </button>
+                        <button>
+                            <img src="images/icons8-cancel.svg" alt="Dismiss post">
+
+                        </button>
+                    </div>
+                  </header>
+                  <!-- Post Content -->
+                  <div class="feed-post-content">
+                    <p class="post-text">
+                        ভাইয়ের যত আয়োজন শুধু রিমোট জব হোল্ডারদের নিয়ে"
+                    </p>
+                    <p class="post-description">জি, কথা সত্য। যেহেতু আমার সমস্ত এক্সপেরিয়েন্স রিমোট জব নিয়ে,
+                       তাই আমি... <a href="linkedin.html">more</a> 
+                    </p>
+                    <button class="translation-button" type="button">
+                        Show translate
+                    </button>
+                  <!-- Post Reactions and Comments -->
+                  <div class="post-engagement">
+                    <div class="reaction-summary">
+                        <div class="reaction-icons">
+                            <img src="images/boxicons--like.svg" alt="">
+                            <img src="images/icons8-love-circled-48.png" alt="">
+                            <img src="images/icons8-light-on-64.png" alt="">
+
+                        </div>
+                        <span>235</span>
+                    </div>
+                    <a href="linkedin.html">14 comments</a>
+                  </div>
+                  <!-- Post Action Buttons -->
+                   <div class="post-actions">
+                    <button type="button" class="post-action">
+                        <img src="images/boxicons--like.svg" alt="">
+                        <span>Like</span>
+
+                    </button>
+                    <button type="button" class="post-action">
+                        <img src="images/icons8-quote-50.png" alt="">
+                        <span>Comments</span>
+
+                    </button>
+                     <button type="button" class="post-action">
+                        <img src="images/icons8-retweet-24.png" alt="">
+                        <span>Comments</span>
+
+                    </button>
+                    <button type="button" class="post-action">
+                        <img src="images/icons8-sent-50.png" alt="">
+                        <span>Comments</span>
+
+                    </button>
+
+                    
+
+
+
+                   </div>
+
+
+             </article>
+
+         </main>
+          <!-- Right Sidebar -->
+          <aside class="right-sidebar">
+          <!-- Today's Puzzles Card --> 
+           <section class="puzzle-card">
+            <h2>Today's puzzles</h2>
+            <ul class="puzzles-list">
+                <li class="puzzles-item">
+                    <a href="linkedin.html">
+                        <img src="images/icons8-puzzle-40.png" alt="">
+                        <span class="puzzle-information">
+                            <strong>Zip #571</strong>
+                            <span>Complete the path</span>
+                        </span>
+                        <span class="puzzle-arrow">›</span>
+                    </a>
+
+                </li>
+                <li class="puzzle-item">
+                    <a href="linkedin.html">
+                        <img src="images/icons8-puzzle-94.png" alt="">
+                        <span class="puzzle-information">
+                            <strong>Wend #123</strong>
+                            <span>Weave through words</span>
+                        </span>
+                        <span class="puzzle-arrow">›</span>
+                    </a>
+                </li>
+                <li class="puzzle-item">
+                    <a href="linkedin.html">
+                        <img src="images/icons8-puzzle-48.png" alt="">
+                        <span class="puzzle-information">
+                            <strong>Patches #206</strong>
+                            <span>Piece it together</span>
+                        </span>
+                        <span class="puzzle-arrow">›</span>
+                    </a>
+                </li>
+                 <li class="puzzle-item">
+                    <a href="linkedin.html">
+                        <img src="images/icons8-puzzle-94.png" alt="">
+                        <span class="puzzle-information">
+                            <strong>Mini Sudoku #424</strong>
+                            <span>The classic game, made mini</span>
+                        </span>
+                        <span class="puzzle-arrow">›</span>
+                    </a>
+                </li>
+            </ul>
+            <button class="show-more-button" type="button">
+                Show more <span>⌄</span>
+            </button>
+
+
+           </section>
+            <!-- Add to Your Feed Card -->
+             <section class="add-to-feed-card">
+                <h2>Add to your feed</h2>
+                <ul class="suggestions-list">
+                    <li class="suggestion-item">
+                        <img class="suggestion-picture" src="images/user-profile.svg" alt="">
+                        <div class="suggestion-information">
+                          <a href="#" class="suggestion-name">Mubashir Amin</a>
+                          <p>Flavor Of Health - Why Compromise? |...</p>
+
+                          <button type="button" class="follow-button">
+                          <span>＋</span> Follow
+                          </button>
+                        </div>
+                    </li>
+                    <li class="suggestion-item">
+
+                       <img
+                         class="suggestion-picture"
+                         src="images/amd ad-shabbir.jpg"
+                         alt=""
+                               >
+
+                       <div class="suggestion-information">
+                          <a href="#" class="suggestion-name">Amdad Shabbir</a>
+                          <p>Fullstack AI Engineer · Building with ...</p>
+
+                          <button type="button" class="follow-button">
+                          <span>＋</span> Follow
+                          </button>
+                       </div>
+
+                    </li>
+                    <li class="suggestion-item">
+
+                       <img
+                         class="suggestion-picture"
+                         src="images/amd ad-shabbir.jpg"
+                         alt=""
+                               >
+
+                       <div class="suggestion-information">
+                          <a href="#" class="suggestion-name">Faith Ndeobi</a>
+                          <p>Helping You Go From “I Don’t Know ...</p>
+
+                          <button type="button" class="follow-button">
+                          <span>＋</span> Follow
+                          </button>
+                       </div>
+
+                    </li>
+                    
+
+
+
+                </ul>
+             </section>
+
+
+          </aside>
+
+
+
+
+    </div>  
     
 </body>
 </html>
