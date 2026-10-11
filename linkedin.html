@@ -9,12 +9,12 @@
 </head>
 <body>
     
-    <a href="index.html">← Back to Home</a>
+   
     <!-- Top Navigation -->
      <header class="site-header">
         <div class="nav-container">
             <!-- LinkedIn Logo and Search -->
-             <div>
+             <div class="nav-brand">
                 <a href="linkedin.html" class="brand">
                     <img src="images/logo-linkedin.svg" alt="Linkedin">
                 </a>
@@ -70,14 +70,14 @@
                     </li>
             
                     <li class="nav-item">
-                        <a href="linkedin.html">
+                        <a class="dropdown-arrow" href="linkedin.html">
                             <img class="nav-profile-pic" src="images/profile-pic.jpeg" alt="Nav Profile Pic">
                             <span>Me <span class="dropdown-arrow">▼</span></span>
 
                         </a>
                     </li>
                     <li class="nav-item business-navigation">
-                        <a href="linkedin.html">
+                        <a class="dropdown-arrow" href="linkedin.html">
                             <img src="images/grid.svg" alt="Business">
                             <span>For Business <span class="dropdown-arrow">▼</span></span>
                         </a>
@@ -103,7 +103,7 @@
                 <div class="profile-cover">
                     <img src="images/cover-photo.png" alt="profile cover" class="cover-image">
                 </div>
-                <div>
+                <div class="profile-details">
                      <a href="linkedin.html">
                         <img class="profile-picture" src="images/profile-pic.jpeg" alt="Jabir Chowdhury">
                     </a>
@@ -210,12 +210,12 @@
             </div>
             <div class="post-option">
                 <button type="button" class="post-options">
-                    <img src="images/icons8-video-48.png" alt="">
+                    <img src="images/at-icons--video.svg" alt="">
                     <span>Video</span>
                 </button>
                 <button type="button" class="post-options">
                     <img src="images/heroicons--photo-16-solid.svg" alt="">
-                    <span>Video</span>
+                    <span>Photo</span>
                 </button>
                 <button type="button" class="post-options">
                     <img src="images/majesticons--article-line.svg" alt="">
@@ -228,7 +228,7 @@
 
            </section>
             <!-- Feed Sorting -->
-             <div>
+             <div class="feed-sorting">
                 <span class="sorting-line"></span>
                 <button>
                     Sort by: <strong>Top</strong>
@@ -236,7 +236,7 @@
                 </button>
              </div>
             <!-- Feed Post -->
-             <article class="Feed post">
+             <article class="feed-post">
                  <!-- Post Header -->
                   <header class="feed-post-header">
                     <a href="index.html" class="post-author-link">
@@ -258,7 +258,7 @@
                     </div>
                     <div class="post-header-actions">
                         <button>
-                            <img src="images/more.svg" alt="More post action">
+                            <img src="images/icons8-more-32.png" alt="More post action">
                         </button>
                         <button>
                             <img src="images/icons8-cancel.svg" alt="Dismiss post">
@@ -275,8 +275,9 @@
                        তাই আমি... <a href="linkedin.html">more</a> 
                     </p>
                     <button class="translation-button" type="button">
-                        Show translate
+                        Show translation
                     </button>
+                   </div>
                   <!-- Post Reactions and Comments -->
                   <div class="post-engagement">
                     <div class="reaction-summary">
@@ -328,8 +329,8 @@
           <!-- Today's Puzzles Card --> 
            <section class="puzzle-card">
             <h2>Today's puzzles</h2>
-            <ul class="puzzles-list">
-                <li class="puzzles-item">
+            <ul class="puzzle-list">
+                <li class="puzzle-item">
                     <a href="linkedin.html">
                         <img src="images/icons8-puzzle-40.png" alt="">
                         <span class="puzzle-information">
@@ -396,7 +397,7 @@
 
                        <img
                          class="suggestion-picture"
-                         src="images/amd ad-shabbir.jpg"
+                         src="images/user-profile.svg"
                          alt=""
                                >
 
@@ -414,7 +415,7 @@
 
                        <img
                          class="suggestion-picture"
-                         src="images/amd ad-shabbir.jpg"
+                         src="images/user-profile.svg"
                          alt=""
                                >
 
@@ -442,6 +443,6 @@
 
 
     </div>  
-    
+  <a class="back-to-home" href="index.html">← Back to Home</a> 
 </body>
 </html>
