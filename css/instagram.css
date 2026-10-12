@@ -1,0 +1,126 @@
+.instagram {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+.instagram > a {
+    display: inline-block;
+    margin-bottom: 30px;
+    color: blue;
+}    
+.instagram-profile {
+    width: 100%;
+}
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 40px 20px;
+}
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+} 
+.profile-info {
+    flex: 1;
+
+}   
+.profile-name {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+.profile-name h1{
+    margin: 0;
+}
+.button-follow {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(7, 115, 255);
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+.profile-stats {
+    display: flex;
+    
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+.profile-stats li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.profile-stats strong {
+    font-size: 700;
+}
+.profile-bio {
+    margin-top: 20px;
+}
+.profile-bio p {
+    margin: 5px 0;
+
+
+}
+.profile-bio p:first-child {
+    font-weight: 600;
+}
+.photo-grid h2 {
+    margin: 0 0 20px;
+    text-align: start;
+}
+.photo-grid a h2 {
+    color: #4e1717;
+    text-decoration: none;
+    cursor: pointer;
+}
+.photo-grid a  h2:link {
+    color: #015893
+}
+.photo-grid a h2:visited {
+    color: #024619;
+}
+.photo-grid a h2:hover {
+    color:blueviolet
+}
+.photo-grid a h2:active {
+    color: rgb(76, 74, 73);
+}
+.photo-lists {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.photo-lists img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    display: block;
+}
+@media (max-width: 600px) {
+    .photo-lists {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .profile-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
