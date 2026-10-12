@@ -1,0 +1,1498 @@
+/* ========================================
+   Header & Navigation
+======================================== */
+.site-header {
+    min-height: 60px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddc8c8;
+
+}
+.nav-container {
+    min-height: 60px;
+    padding: 0 24px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-brand {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+    flex-shrink: 0;
+    
+}
+.brand {
+    display: block;
+    flex-shrink: 0;
+    
+}
+.brand img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+.search-form {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #dddddd;
+    padding: 5px 12px;
+    background-color: #fbfcfc;
+    border-radius: 50px;
+
+
+}
+.search-form input {
+    width: 300px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font: inherit;
+}
+.search-form img {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+/* Main Navigation */
+
+.main-navigation {
+    margin-left: auto;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+}
+
+.nav-lists {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 18px;
+    margin: 0;
+    padding: 0;
+}
+.nav-item > a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    min-width: 48px;
+    color: #666666;
+    font-size: 12px;
+    line-height: 1.3;
+    white-space: nowrap;
+
+    
+}
+.nav-item > a > img,
+.notification-icon > img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+.nav-item .nav-profile-pic {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.nav-item > a:hover {
+    color: #191919;
+}
+.nav-item.active > a {
+    color: #585858;
+    font-weight: 400;
+}
+.dropdown-arrow {
+    display: inline-block;
+    transform: translateY(5px);
+}
+.nav-item.active {
+    border-bottom: 2px solid #191919;
+}
+.nav-item {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+/* Notification Badge */
+.notification-icon {
+    position: relative;
+    display: inline-flex;
+}
+
+.notification-count {
+    position: absolute;
+    top: -5px;
+    right: -8px;
+    min-width: 16px;
+    height: 16px;
+    padding: 0 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #cc1016;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 1;
+    border-radius: 50%;
+}
+
+
+.main-container {
+    width: 100%;
+    max-width: 1128px;
+    margin: 24px auto;
+    padding: 0 12px;
+    display: grid;
+    grid-template-columns: 225px minmax(0, 1fr) 300px;
+    gap: 24px;
+    align-items: start;
+}
+.profile-card {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    overflow: hidden;
+
+}
+.profile-cover {
+    height: 70px;
+    overflow: hidden;
+}
+.cover-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profile-picture {
+    width: 72px;
+    height: 72px;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: -36px;
+    position: relative;
+}
+.profile-details {
+    padding: 0 12px 16px;
+    text-align: start;
+}
+.business-profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 16px;
+    padding-top: 12px;
+    border-top: 1px solid #e5e5e5;
+    text-align: left;
+}
+.business-profile img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+.business-profile span {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #424141;
+}
+.business-profile:hover span {
+    color: #0a66c2;
+}
+.profile-details h1 {
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #191919;
+
+}
+.profile-headline {
+    margin-top: 6px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #666666;
+
+}
+.profile-location {
+    margin-top: 6px;
+    font-size: 12px;
+    color: #666666;
+}
+.profile-details a {
+    text-decoration: none;
+}
+
+.profile-details a:hover {
+    text-decoration: none;
+}
+
+
+
+
+.sidebar-premium-card {
+    padding: 12px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+.sidebar-premium-card p {
+    margin-bottom: 8px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #666666;
+}
+.sidebar-premium-card a {
+    font-size: 12px;
+    font-weight: 600;
+    color: #525151;
+    text-decoration: none;
+}
+.sidebar-premium-card a:hover {
+    color: #0a66c2;
+    text-decoration: underline;
+}
+.connections-card {
+    padding: 12px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+.connections-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #343434;
+    text-decoration: none;
+
+}
+.connections-count {
+    color:  #0a66c2;
+    font-weight: 600;
+}
+.connections-card p {
+    margin-top: 6px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #666666;
+}
+.shortcuts-card {
+    padding: 12px 0;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+.shortcuts-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.shortcuts-list li {
+    margin: 0;
+    padding: 0;
+}
+.shortcuts-list a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    color: #666666;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+
+}
+.shortcuts-list img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    flex-shrink: 0;
+
+}
+.shortcuts-list a:hover {
+    background-color: #f3f2ef;
+    color: #191919;
+}
+/*-------- middle container------ */
+.main-feed {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.premium-promotion-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 24px 20px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.close-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(241, 239, 239);
+    color: #3d3d3d;
+    font-size: 22px;
+    line-height: 1;
+    cursor: pointer;
+}
+.close-button:hover {
+    background-color: #c3c2c0;
+    color: #191919;
+}
+.promotion-content {
+    flex: 1;
+    min-width: 0;
+}
+.promotion-content h2 {
+    margin-bottom: 8px;
+    color: #191919;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.4;
+    
+
+}
+.promotion-content p {
+    margin-bottom: 12px;
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.try-premium-button {
+    display: inline-block;
+    margin-bottom: 8px;
+    padding: 8px 16px;
+    border: 1px solid #c68e35;
+    border-radius: 24px;
+    background-color: #e68942;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.try-premium-button:hover {
+     background-color: #d63b1c;
+}
+.promotion-content .premium-disclaimer {
+    margin-bottom: 0;
+    color: #666666;
+    font-size: 12px;
+    line-height: 1.4;
+}
+.promotion-image {
+     position: relative;
+    flex-shrink: 0;
+    width: 72px;
+    height: 72px;
+}
+.promotion-image img:first-child {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.promotion-image img:last-child {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+.features {
+    padding: 12px 16px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+
+}
+.ui-profile-picture {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.my-profile-picture {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.start-a-post {
+    flex: 1;
+    min-width: 0;
+    border: 1px solid #b2b2b2;
+    border-radius: 28px;
+    background-color: #ffffff;
+    color: #666666;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    padding: 10px 14px;
+}
+.post-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    border-top: 1px solid #e0e0e0;
+
+}
+.post-options {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 6px;
+    border: none;
+    border-radius: 6px;
+    background-color: transparent;
+    color: #666666;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+     transition: background-color 0.2s ease;
+
+}
+.post-options:hover {
+      background-color: #e6e6e4;
+}
+.post-options img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+.feed-sorting {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 4px 0;
+   
+}
+/* Horizontal sorting line */
+.sorting-line {
+    flex: 1;
+    height: 1px;
+    background-color: #c5c5c5;
+}
+/* Sort by button */
+.feed-sorting button {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 0 4px 8px;
+    border: none;
+    background-color: transparent;
+    color: #666666;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.feed-sorting button strong {
+    color: #191919;
+    font-weight: 600;
+}
+
+.dropdown-arrow {
+     display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    line-height: 1;
+    position: relative;
+    top: -4px;
+}
+
+/* Feed post card */
+.feed-post {
+    min-width: 0;
+    padding: 16px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+/* Feed post header */
+.feed-post-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+/* Post author profile link */
+.post-author-link {
+    display: block;
+    flex-shrink: 0;
+    text-decoration: none;
+}
+/* Post author picture */
+.post-author-picture {
+    display: block;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+/* Post author information */
+.post-author-information {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+}
+/* Author name and verified icon */
+.post-author-name {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin: 0;
+    color: #191919;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+/* Author name link */
+.post-author-name a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.post-author-name a:hover {
+    color: #0a66c2;
+    text-decoration: underline;
+}
+/* Verified badge */
+.post-author-name img {
+    width: 14px;
+    height: 14px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+/* Author headline */
+.post-author-headline {
+    margin: 0;
+    color: #666666;
+    font-size: 12px;
+    line-height: 1.4;
+}
+/* Post date */
+.post-date {
+    margin: 0;
+    color: #666666;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+/* Post header action buttons */
+.post-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+/* Individual header action buttons */
+.post-header-actions button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.post-header-actions button:hover {
+    background-color: #f3f2ef;
+}
+/* Header action icons */
+.post-header-actions button img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+/* Step 67: Feed Post Content */
+
+.feed-post-content {
+    min-width: 0;
+    margin-top: 12px;
+}
+.post-text {
+    margin: 0 0 8px;
+    color: #191919;
+    font-size: 14px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+.post-description {
+    margin: 0 0 8px;
+    color: #191919;
+    font-size: 14px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+.post-description a {
+    color: #666666;
+    font-weight: 600;
+    text-decoration: none;
+}
+.post-description a:hover {
+    color: #0a66c2;
+    text-decoration: underline;
+}
+.translation-button {
+    display: inline-block;
+    margin: 0 0 12px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: #666666;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.translation-button:hover {
+    color: #0a66c2;
+    text-decoration: underline;
+}
+/* Step 68: Post Engagement */
+
+.post-engagement {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+    color: #666666;
+    font-size: 12px;
+}
+.reaction-summary {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    min-width: 0;
+}
+.reaction-icons {
+    display: flex;
+    align-items: center;
+    padding-left: 2px;
+}
+.reaction-icons img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+.reaction-icons img + img {
+    margin-left: -3px;
+}
+.post-engagement > a {
+    flex-shrink: 0;
+    color: #666666;
+    text-decoration: none;
+}
+.post-engagement > a:hover {
+    color: #0a66c2;
+    text-decoration: underline;
+}
+
+/* Step 69: Post Actions */
+
+.post-actions {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 4px;
+    padding-top: 8px;
+}
+.post-action {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 10px 4px;
+    border: none;
+    border-radius: 6px;
+    background: transparent;
+    color: #666666;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.post-action:hover {
+    background-color: #f3f2ef;
+    color: #191919;
+}
+.post-action img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+.post-action span {
+    line-height: 1.3;
+}
+
+
+
+
+/* Step 72: Right Sidebar */
+
+.right-sidebar {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-self: start;
+}
+
+/* Step 73: Puzzle Card */
+
+.puzzle-card {
+    padding: 16px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+.puzzle-card h2 {
+    margin: 0 0 12px;
+    color: #191919;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+/* Step 74: Puzzle List */
+
+.puzzle-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.puzzle-item {
+    margin: 0;
+    padding: 0;
+}
+
+.puzzle-item + .puzzle-item {
+    margin-top: 4px;
+}
+/* Step 75: Puzzle Item Link */
+
+.puzzle-item > a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
+    padding: 8px 4px;
+    border-radius: 6px;
+    color: #191919;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+.puzzle-item > a:hover {
+    background-color: #f3f2ef;
+}
+.puzzle-item > a > img {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+
+/* Step 76: Puzzle Information */
+
+.puzzle-information {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.puzzle-information strong {
+    color: #191919;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.puzzle-information > span {
+    color: #666666;
+    font-size: 12px;
+    line-height: 1.4;
+}
+/* Step 77: Puzzle Arrow */
+
+.puzzle-arrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 20px;
+    height: 24px;
+    color: #666666;
+    font-size: 24px;
+    line-height: 1;
+}
+/* Step 78: Show More Button */
+
+.show-more-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 100%;
+    margin-top: 4px;
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+    background-color: transparent;
+    color: #666666;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+} 
+.show-more-button:hover {
+    background-color: #f3f2ef;
+    color: #191919;
+} 
+.show-more-button span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    line-height: 1;
+    
+} 
+/* Step 79: Add to Your Feed Card */
+
+.add-to-feed-card {
+    padding: 16px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+.add-to-feed-card h2 {
+    margin: 0 0 16px;
+    color: #191919;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+/* Step 80: Suggestions List */
+
+.suggestions-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.suggestion-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    min-width: 0;
+    padding: 12px 0;
+}
+.suggestion-item:first-child {
+    padding-top: 0;
+}
+.suggestion-item + .suggestion-item {
+    border-top: 1px solid #eeeeee;
+}
+
+/* Step 81: Suggestion Picture */
+
+.suggestion-picture {
+    display: block;
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Step 82: Suggestion Information */
+
+.suggestion-information {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+.suggestion-name {
+    max-width: 100%;
+    color: #191919;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.4;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+.suggestion-name:hover {
+    color: #0a66c2;
+    text-decoration: underline;
+}
+.suggestion-information p {
+    margin: 0;
+    color: #666666;
+    font-size: 12px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+.follow-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 4px;
+    padding: 5px 14px;
+    border: 1px solid #666666;
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: #666666;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.4;
+    cursor: pointer;
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease;
+}
+.follow-button:hover {
+    border-color: #191919;
+    background-color: #ead798;
+    color: #191919;
+}
+.follow-button span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    line-height: 1;
+}
+.back-to-home {
+    display: inline-block;
+    padding: 6px 10px;
+    border: 1px solid #90caf9;
+    border-radius: 25px;
+    background-color: #ebf0f4;
+    color: #1565c0;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s ease,
+                border-color 0.3s ease,
+                color 0.3s ease;
+}
+
+.back-to-home:hover {
+    background-color: #ceced3;
+    border-color: #64b5f6;
+    color: #0d47a1;
+}
+```css
+/* ========================================
+   Mobile Responsive Design
+   ======================================== */
+
+/* Step 1: Tablet and Mobile Layout */
+@media (max-width: 767px) {
+
+    /* Header */
+    .site-header {
+        width: 100%;
+        min-height: 60px;
+    }
+
+    .nav-container {
+        min-height: 60px;
+        padding: 0 12px;
+        gap: 10px;
+    }
+
+    /* Logo and Search */
+    .nav-brand {
+        min-width: 0;
+        gap: 6px;
+    }
+
+    .brand img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .search-form {
+        min-width: 0;
+        padding: 7px 9px;
+        gap: 6px;
+    }
+
+    .search-form input {
+        width: 100%;
+        min-width: 0;
+        max-width: 140px;
+        font-size: 13px;
+    }
+
+    .search-form img {
+        width: 17px;
+        height: 17px;
+    }
+
+    /* Main Navigation */
+    .main-navigation {
+        min-width: 0;
+        margin-left: auto;
+    }
+
+    .nav-lists {
+        gap: 12px;
+    }
+
+    .nav-item {
+        height: 60px;
+        flex-shrink: 0;
+    }
+
+    .nav-item > a {
+        min-width: 32px;
+        gap: 3px;
+        font-size: 10px;
+    }
+
+    .nav-item > a > img,
+    .notification-icon > img {
+        width: 22px;
+        height: 22px;
+    }
+
+    .nav-item .nav-profile-pic {
+        width: 22px;
+        height: 22px;
+    }
+
+    .dropdown-arrow {
+        font-size: 12px;
+    }
+
+    /* Main Page Layout */
+    .main-container {
+        width: 100%;
+        max-width: 100%;
+        margin: 12px auto;
+        padding: 0 10px;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 12px;
+    }
+
+    /* Hide Sidebars on Mobile */
+    .left-sidebar,
+    .right-sidebar {
+        display: none;
+    }
+
+    /* Middle Feed */
+    .main-feed {
+        width: 100%;
+        min-width: 0;
+        gap: 8px;
+    }
+
+    /* Premium Promotion Card */
+    .premium-promotion-card {
+        gap: 10px;
+        padding: 20px 14px;
+    }
+
+    .promotion-content {
+        min-width: 0;
+    }
+
+    .promotion-content h2 {
+        font-size: 16px;
+    }
+
+    .promotion-content p {
+        font-size: 13px;
+    }
+
+    .try-premium-button {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+
+    .promotion-image {
+        width: 56px;
+        height: 56px;
+    }
+
+    /* Create Post Card */
+    .features {
+        padding: 12px;
+    }
+
+    .ui-profile-picture {
+        gap: 8px;
+    }
+
+    .my-profile-picture {
+        width: 42px;
+        height: 42px;
+    }
+
+    .start-a-post {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+
+    .post-option {
+        gap: 2px;
+    }
+
+    .post-options {
+        gap: 5px;
+        padding: 10px 3px;
+        font-size: 12px;
+    }
+
+    .post-options img {
+        width: 18px;
+        height: 18px;
+    }
+
+    /* Feed Sorting */
+    .feed-sorting {
+        gap: 6px;
+    }
+
+    /* Feed Post */
+    .feed-post {
+        padding: 12px;
+    }
+
+    .feed-post-header {
+        gap: 8px;
+    }
+
+    .post-author-picture {
+        width: 42px;
+        height: 42px;
+    }
+
+    .post-author-information {
+        gap: 3px;
+    }
+
+    .post-author-name {
+        font-size: 13px;
+    }
+
+    .post-author-headline,
+    .post-date {
+        font-size: 11px;
+    }
+
+    .post-header-actions {
+        gap: 2px;
+    }
+
+    .post-header-actions button {
+        width: 28px;
+        height: 28px;
+    }
+
+    .post-header-actions button img {
+        width: 18px;
+        height: 18px;
+    }
+
+    /* Post Content */
+    .feed-post-content {
+        margin-top: 10px;
+    }
+
+    .post-text,
+    .post-description {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    /* Reactions and Comments */
+    .post-engagement {
+        gap: 8px;
+        font-size: 11px;
+    }
+
+    .reaction-summary {
+        gap: 4px;
+    }
+
+    .reaction-icons img {
+        width: 16px;
+        height: 16px;
+    }
+
+    /* Post Action Buttons */
+    .post-actions {
+        gap: 2px;
+    }
+
+    .post-action {
+        gap: 4px;
+        padding: 10px 2px;
+        font-size: 12px;
+    }
+
+    .post-action img {
+        width: 18px;
+        height: 18px;
+    }
+
+    /* Back to Home Button */
+    .back-to-home {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+}
+
+
+/* ========================================
+   Step 2: Small Mobile Screens
+   ======================================== */
+
+@media (max-width: 480px) {
+
+    /* Header */
+    .nav-container {
+        padding: 0 8px;
+        gap: 6px;
+    }
+
+    .nav-brand {
+        gap: 5px;
+    }
+
+    .brand img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .search-form {
+        padding: 6px 7px;
+        gap: 5px;
+    }
+
+    .search-form input {
+        width: 75px;
+        max-width: 75px;
+        font-size: 12px;
+    }
+
+    .search-form img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .nav-lists {
+        gap: 8px;
+    }
+
+    .nav-item > a {
+        min-width: 28px;
+        font-size: 9px;
+    }
+
+    .nav-item > a > img,
+    .notification-icon > img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .nav-item .nav-profile-pic {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* Main Layout */
+    .main-container {
+        margin: 8px auto;
+        padding: 0 6px;
+        gap: 8px;
+    }
+
+    /* Premium Card */
+    .premium-promotion-card {
+        padding: 18px 10px;
+        gap: 8px;
+    }
+
+    .promotion-content h2 {
+        font-size: 15px;
+    }
+
+    .promotion-content p {
+        font-size: 12px;
+    }
+
+    .promotion-image {
+        width: 44px;
+        height: 44px;
+    }
+
+    .try-premium-button {
+        padding: 7px 10px;
+        font-size: 12px;
+    }
+
+    /* Create Post */
+    .features {
+        padding: 10px 8px;
+    }
+
+    .my-profile-picture {
+        width: 38px;
+        height: 38px;
+    }
+
+    .start-a-post {
+        padding: 9px 10px;
+        font-size: 12px;
+    }
+
+    .post-options {
+        flex-direction: column;
+        gap: 5px;
+        padding: 8px 2px;
+        font-size: 10px;
+    }
+
+    .post-options img {
+        width: 18px;
+        height: 18px;
+    }
+
+    /* Feed Post */
+    .feed-post {
+        padding: 10px;
+    }
+
+    .post-author-picture {
+        width: 38px;
+        height: 38px;
+    }
+
+    .post-author-name {
+        font-size: 12px;
+    }
+
+    .post-author-headline,
+    .post-date {
+        font-size: 10px;
+    }
+
+    .post-header-actions button {
+        width: 26px;
+        height: 26px;
+    }
+
+    .post-header-actions button img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .post-text,
+    .post-description {
+        font-size: 13px;
+    }
+
+    /* Engagement */
+    .post-engagement {
+        gap: 5px;
+        font-size: 10px;
+    }
+
+    .reaction-icons img {
+        width: 15px;
+        height: 15px;
+    }
+
+    /* Post Actions */
+    .post-actions {
+        gap: 0;
+    }
+
+    .post-action {
+        flex-direction: column;
+        gap: 4px;
+        padding: 8px 1px;
+        font-size: 10px;
+    }
+
+    .post-action img {
+        width: 18px;
+        height: 18px;
+    }
+
+    /* Back to Home */
+    .back-to-home {
+        padding: 7px 10px;
+        font-size: 12px;
+    }
+}
+```
