@@ -1,6 +1,55 @@
 /* ========================================
    Header & Navigation
 ======================================== */
+
+/* Back to Home Button */
+.page-top {
+    padding: 10px 12px;
+    text-align: left;
+}
+
+.back-to-home {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+
+    margin: 0;
+    padding: 6px 14px;
+
+    border: 1px solid #024f8e;
+    border-radius: 25px;
+
+    background-color: #e1e7ec;
+    color: #303f4e;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4;
+
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+
+    transition:
+        background-color 0.3s ease,
+        border-color 0.3s ease,
+        color 0.3s ease;
+}
+
+.back-to-home:hover {
+    background-color: #0376c9;
+    border-color: #034072;
+    color: #12233d;
+}
+
+.back-to-home:focus-visible {
+    outline: 2px solid #1565c0;
+    outline-offset: 3px;
+}
+
+
 .site-header {
     min-height: 60px;
     background-color: #ffffff;
@@ -464,6 +513,10 @@
     cursor: pointer;
     transition: background-color 0.2s ease;
     padding: 10px 14px;
+}
+.start-a-post:active {
+    background-color: #e4e6eb;
+    transform: scale(0.98);
 }
 .post-option {
     display: flex;
@@ -1026,27 +1079,7 @@
     font-size: 18px;
     line-height: 1;
 }
-.back-to-home {
-    display: inline-block;
-    padding: 6px 10px;
-    border: 1px solid #90caf9;
-    border-radius: 25px;
-    background-color: #ebf0f4;
-    color: #1565c0;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 500;
-    transition: background-color 0.3s ease,
-                border-color 0.3s ease,
-                color 0.3s ease;
-}
 
-.back-to-home:hover {
-    background-color: #ceced3;
-    border-color: #64b5f6;
-    color: #0d47a1;
-}
-```css
 /* ========================================
    Mobile Responsive Design
    ======================================== */
@@ -1495,4 +1528,221 @@
         font-size: 12px;
     }
 }
-```
+/* Step 1: Responsive Navbar */
+@media (max-width: 1050px) {
+
+    .nav-container {
+        padding: 0 12px;
+        gap: 10px;
+    }
+
+    .nav-brand {
+        gap: 6px;
+        min-width: 0;
+    }
+
+    .brand img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .search-form {
+        min-width: 0;
+        padding: 5px 8px;
+        gap: 5px;
+    }
+
+    .search-form input {
+        width: clamp(70px, 15vw, 180px);
+        min-width: 0;
+        font-size: 13px;
+    }
+
+    .main-navigation {
+        min-width: 0;
+    }
+
+    .nav-lists {
+        gap: clamp(4px, 0.8vw, 10px);
+    }
+
+    .nav-item {
+        flex-shrink: 1;
+        min-width: 0;
+    }
+
+    .nav-item > a {
+        min-width: 0;
+        font-size: clamp(9px, 1.05vw, 11px);
+    }
+
+    .nav-item > a > img,
+    .notification-icon > img {
+        width: clamp(18px, 2vw, 22px);
+        height: clamp(18px, 2vw, 22px);
+    }
+
+    .nav-item .nav-profile-pic {
+        width: clamp(18px, 2vw, 22px);
+        height: clamp(18px, 2vw, 22px);
+    }
+}
+
+/* Step 2: Mobile Navbar */
+@media (max-width: 576px) {
+
+    .nav-container {
+        padding: 0 8px;
+        gap: 8px;
+    }
+
+    .nav-brand {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .search-form {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .search-form input {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .main-navigation {
+        margin-left: auto;
+        min-width: 0;
+    }
+
+    .nav-lists {
+        gap: 8px;
+    }
+
+    /* Hide less important navigation items */
+    .business-navigation,
+    .premium-navigation {
+        display: none;
+    }
+
+    .nav-item {
+        flex-shrink: 1;
+    }
+
+    .nav-item > a {
+        min-width: 0;
+        font-size: 9px;
+    }
+}
+@media (max-width: 576px) {
+    .nav-container {
+        padding: 0 8px;
+        gap: 6px;
+    }
+
+    .nav-brand {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .search-form {
+        flex: 1;
+        min-width: 0;
+        padding: 4px 6px;
+        gap: 4px;
+    }
+
+    .search-form input {
+        width: 100%;
+        min-width: 0;
+        font-size: 12px;
+    }
+
+    .main-navigation {
+        flex-shrink: 0;
+        margin-left: auto;
+    }
+
+    .nav-lists {
+        gap: 4px;
+    }
+
+    .business-navigation,
+    .premium-navigation {
+        display: none;
+    }
+
+    .nav-item {
+        flex-shrink: 0;
+    }
+
+    .nav-item > a {
+        min-width: 26px;
+        font-size: 9px;
+    }
+
+    .nav-item > a > span:not(.notification-icon) {
+        display: none;
+    }
+
+    .nav-item > a > img,
+    .notification-icon > img,
+    .nav-item .nav-profile-pic {
+        width: 20px;
+        height: 20px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1050px) {
+    .main-container {
+        width: 100%;
+        max-width: 100%;
+        margin: 16px auto;
+        padding: 0 10px;
+        gap: 16px;
+
+        grid-template-columns:
+            minmax(180px, 225px)
+            minmax(0, 1fr)
+            minmax(0, 260px);
+    }
+
+    .left-sidebar,
+    .main-feed,
+    .right-sidebar {
+        min-width: 0;
+    }
+}
+@media (max-width: 767px) {
+    .main-container {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .left-sidebar,
+    .right-sidebar {
+        display: none;
+    }
+
+    .main-feed {
+        width: 100%;
+        min-width: 0;
+    }
+}
+@media (max-width: 767px) {
+    .main-container {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .left-sidebar,
+    .right-sidebar {
+        display: none;
+    }
+
+    .main-feed {
+        width: 100%;
+        min-width: 0;
+    }
+}
+
+/* ========================================
+   Final Responsive Layout Adjustments
