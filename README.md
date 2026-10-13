@@ -170,3 +170,100 @@ social-sites-assignment/
 - Stuck? Break the page into boxes: draw it on paper first.
 
 Good luck, and have fun! 🚀
+
+======================================================================================================================================================================================================================================================================================================================================
+# Social Sites Assignment
+
+**Assigned to:** Mr. Jabir Chowdhury
+
+## Project Overview
+
+This project is a collection of five interconnected web pages built using HTML5 and CSS3. It includes a home page that links to four individually designed social media pages: Facebook, Instagram, LinkedIn, and Google.
+
+The project focuses on recreating familiar social media interfaces while practising page layout, CSS styling, responsive design, navigation, and clean code organization.
+
+## Pages Overview
+
+| File | Description |
+|---|---|
+| `index.html` | Home page featuring links to four social media pages |
+| `facebook.html` | Facebook-inspired page with a login interface and supporting sections |
+| `instagram.html` | Instagram-inspired profile page with profile information, statistics, and a photo grid |
+| `linkedin.html` | LinkedIn-inspired profile page with navigation, a cover banner, profile information, and content cards |
+| `google.html` | Google-inspired search page with a search interface and supporting elements |
+
+## Completed Work
+
+### 1. Home Page and Navigation
+
+- Created a home page featuring four social media icons.
+- Linked each icon to its corresponding local HTML page.
+- Added navigation links to move between the home page and individual social media pages.
+- Implemented a "← Back to Home" link on the social media pages.
+
+### 2. Facebook Page
+
+- Built a Facebook-inspired interface with a logo, introductory text, and illustration.
+- Designed a login form layout with input fields, buttons, and a password recovery link.
+- Added supporting elements, including Meta branding and footer links.
+- Refined the layout and adjusted CSS for different viewport sizes.
+
+### 3. Instagram Page
+
+- Created an Instagram-inspired profile layout.
+- Added a circular profile picture, username, Follow button, and profile statistics.
+- Built a three-column photo grid using HTML and CSS.
+- Organized the profile content and image elements for a consistent layout.
+
+### 4. LinkedIn Page
+
+- Built a LinkedIn-inspired profile interface with a navigation bar.
+- Designed a cover banner with an overlapping profile picture.
+- Added profile information, including a name, headline, and location.
+- Created content cards for About, Experience, Education, and Skills.
+- Used CSS Grid, Flexbox, positioning, spacing, and box shadows to structure the layout.
+- Refined responsive behavior for laptop, tablet, and mobile viewports.
+
+### 5. Google Search Page
+
+- Created a Google-inspired search page.
+- Designed the central Google logo and search interface.
+- Styled the search field, buttons, navigation elements, and supporting sections.
+- Organized the page layout using HTML and CSS.
+
+### 6. Responsive Design and Code Refinement
+
+- Worked on responsive layout adjustments across the social media pages.
+- Used CSS media queries to adapt layouts to different viewport sizes.
+- Adjusted widths, spacing, typography, and element positioning for smaller screens.
+- Refined the CSS structure and styling to improve readability, consistency, and maintainability.
+- Practised organizing layouts into sections, containers, and individual components.
+
+### 7. Git and GitHub Workflow
+
+- Practised creating and working with Git branches.
+- Used Git commands to inspect repository status, branches, and commit history.
+- Worked with remote branches and pushed changes to GitHub.
+- Practised the branch-based workflow for submitting changes through Pull Requests.
+
+## Technologies and Tools
+
+- **HTML5** — Page structure and semantic elements
+- **CSS3** — Styling, layouts, transitions, and responsive design
+- **Flexbox** — Alignment and one-dimensional layouts
+- **CSS Grid** — Structured multi-column layouts
+- **Media Queries** — Responsive viewport adjustments
+- **Git** — Version control and branch management
+- **GitHub** — Repository hosting and Pull Request workflow
+
+## Key Learning Outcomes
+
+Through this project, I practised building multi-page websites, organizing HTML and CSS, recreating familiar user interfaces, implementing page navigation, creating responsive layouts, and managing project changes with Git and GitHub.
+
+The project also helped me strengthen my understanding of Flexbox, CSS Grid, positioning, spacing, reusable styling patterns, and responsive design.
+
+## Project Status
+
+The project has progressed through the development of the four social media pages and the home page, along with responsive layout refinements and code polishing.
+
+**More to learn, more to build.**
