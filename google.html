@@ -9,9 +9,136 @@
 
 </head>
 <body>
-    <h1>Google Home Page</h1>
-    <h2>Welcome to Google</h2>
-    <a href="index.html">← Back to Home</a>
+    <div class="page-top">
+        <a class="back-to-home" href="index.html">← Back to home</a>
+   </div>
+    <!-- Top right: Gmail, Images, apps menu, profile -->
+    <header>
+        <nav>
+            <a href="https://mail.google.com">Gmail</a>
+            <a href="https://www.google.com/imghp">Images</a>
+            <button type="button" class="icon-button" aria-label="Google apps">
+                <img src="images/apps.svg" alt="">
+            </button>
+            <button type="button" class="profile" aria-label="Google Account">
+                <img src="images/profilepic.jpg" alt="">
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <img class="logo" src="images/google.png" alt="Google">
+
+        <!-- Search bar: sends the query to real Google search -->
+        <form class="search-bar" action="https://www.google.com/search">
+            <button type="button" class="icon-button" aria-label="Add files">
+                <img src="images/plus.svg" alt="">
+            </button>
+
+            <input type="text" name="q" placeholder="Ask Google" aria-label="Search">
+
+            <button type="button" class="icon-button" aria-label="Search by voice">
+                <img src="images/mic-dark.svg" alt="">
+            </button>
+            <button type="button" class="icon-button lens" aria-label="Search by image">
+                <img src="images/lens-dark.svg" alt="">
+            </button>
+
+            <!-- AI Mode chip: animated gradient border lives in style.css -->
+            <button type="submit" class="ai-mode" formaction="https://www.google.com/search?udm=50">
+                <img src="images/ai-mode.svg" alt="">
+                <span>AI Mode</span>
+            </button>
+        </form>
+
+        <!-- Suggestion cards -->
+        <div class="cards">
+            <a class="card" href="https://www.google.com/search?udm=50">
+                <img src="images/ai-mode.svg" alt="">
+                <span>
+                    <strong>Do more with AI Mode</strong>
+                    <small>Create, summarize, plan</small>
+                </span>
+            </a>
+            <a class="card" href="https://gemini.google.com">
+                <span class="emoji" aria-hidden="true">🍌</span>
+                <span>
+                    <strong>Create images</strong>
+                    <small>Reimagine, illustrate, edit</small>
+                </span>
+            </a>
+        </div>
+
+        <!-- Shortcuts -->
+        <ul class="shortcuts">
+            <li>
+                <a href="https://chromewebstore.google.com">
+                    <span class="tile"><img src="images/webstore.svg" alt=""></span>
+                    <span class="label">Web Store</span>
+                </a>
+                <button type="button" class="more" aria-label="More actions for Web Store">
+                    <img src="images/more.svg" alt="">
+                </button>
+            </li>
+            <li>
+                <a href="https://web.whatsapp.com">
+                    <span class="tile"><img src="images/whatsapp.svg" alt=""></span>
+                    <span class="label">https://web.whatsapp.com</span>
+                </a>
+                <button type="button" class="more" aria-label="More actions for https://web.whatsapp.com">
+                    <img src="images/more.svg" alt="">
+                </button>
+            </li>
+            <li>
+                <a href="https://github.com">
+                    <span class="tile"><img src="images/github.svg" alt=""></span>
+                    <span class="label">https://github.com</span>
+                </a>
+                <button type="button" class="more" aria-label="More actions for https://github.com">
+                    <img src="images/more.svg" alt="">
+                </button>
+            </li>
+            <li>
+                <a href="https://www.youtube.com">
+                    <span class="tile"><img src="images/youtube.svg" alt=""></span>
+                    <span class="label">https://www.youtube.com</span>
+                </a>
+                <button type="button" class="more" aria-label="More actions for https://www.youtube.com">
+                    <img src="images/more.svg" alt="">
+                </button>
+            </li>
+            <li>
+                <a href="https://chatgpt.com">
+                    <span class="tile"><img src="images/chatgpt.svg" alt=""></span>
+                    <span class="label">chatgpt</span>
+                </a>
+                <button type="button" class="more" aria-label="More actions for chatgpt">
+                    <img src="images/more.svg" alt="">
+                </button>
+            </li>
+            <li>
+                <a href="https://meet.google.com">
+                    <span class="tile"><img src="images/meet.svg" alt=""></span>
+                    <span class="label">google meets</span>
+                </a>
+                <button type="button" class="more" aria-label="More actions for google meets">
+                    <img src="images/more.svg" alt="">
+                </button>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="tile"><img src="images/show-more.svg" alt=""></span>
+                    <span class="label">Show more</span>
+                </a>
+            </li>
+        </ul>
+    </main>
+
+    <button type="button" class="customize">
+        <img src="images/pencil.svg" alt="">
+        Customize Chrome
+    </button>
+    
     
 </body>
 </html>
