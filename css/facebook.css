@@ -244,95 +244,168 @@
 .footer-links + .footer-links {
     margin-top: 6px;
 }
-/* Mobile */
-@media (max-width: 600px) {
+
+/* =========================
+   Responsive Layout
+========================= */
+
+/* Small Laptop and Tablet */
+@media (max-width: 1024px) {
+
+    .facebook-left {
+        width: 52%;
+        padding: 30px 20px;
+    }
+
+    .facebook-right {
+        width: 48%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .facebook-logo-text {
+        gap: 80px;
+    }
+
+    .explore-text p {
+        font-size: clamp(36px, 4.5vw, 52px);
+    }
+
+    .facebook-illustration img {
+        width: 100%;
+        max-width: 520px;
+    }
+
+    .login-container {
+        width: 100%;
+        max-width: 480px;
+        box-sizing: border-box;
+    }
+}
+
+
+/* Tablet and Large Mobile */
+@media (max-width: 767px) {
 
     .facebook-page {
-        min-height: auto;
+        min-height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        border: none;
     }
 
     .back-home {
         top: 15px;
         left: 15px;
+        z-index: 2;
         font-size: 14px;
     }
 
     /* Left Section */
+
     .facebook-left {
+        width: 100%;
+        box-sizing: border-box;
         flex-direction: column;
-        padding: 70px 20px 40px;
+        padding: 65px 20px 20px;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
     }
 
     .facebook-logo-text {
-        gap: 25px;
         width: 100%;
+        gap: 25px;
     }
 
     .facebook-logo img {
-        width: 45px;
+        width: 42px;
+        height: auto;
         margin-left: 0;
     }
 
     .explore-text {
-        margin-top: 10px;
+        width: 100%;
+        margin-top: 5px;
         text-align: center;
     }
 
     .explore-text p {
-        margin: 5px;
-        font-size: 38px;
+        margin: 5px 0;
+        font-size: clamp(30px, 6vw, 42px);
+        line-height: 1.1;
     }
 
     .facebook-illustration {
-        margin-top: 20px;
         width: 100%;
+        margin-top: 20px;
     }
 
     .facebook-illustration img {
+        display: block;
         width: 100%;
-        max-width: 420px;
+        max-width: 400px;
+        height: auto;
         margin: 0 auto;
     }
 
     /* Right Section */
+
     .facebook-right {
-        padding: 30px 15px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 30px 20px;
     }
 
     .login-container {
         width: 100%;
+        max-width: 480px;
         padding: 10px;
+        box-sizing: border-box;
     }
 
     .login-container h1 {
         font-size: 17px;
+        text-align: left;
     }
 
     .login-container input {
+        width: 100%;
         box-sizing: border-box;
-        padding: 17px;
+        padding: 16px;
         font-size: 14px;
     }
 
     .login-container form button {
-        padding: 12px;
+        width: 100%;
+        padding: 13px;
+    }
+
+    .forgot-password {
+        margin-top: 20px;
+        font-size: 14px;
     }
 
     .forget-button,
     .create-account {
-        margin-top: 30px;
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 25px;
+        padding: 13px;
+        font-size: 15px;
     }
 
     /* Footer */
+
     .facebook-footer {
         width: 100%;
+        max-width: 520px;
         box-sizing: border-box;
-        padding: 25px 15px;
+        padding: 25px 20px;
     }
 
     .footer-languages,
     .footer-links {
-        gap: 10px;
+        gap: 10px 14px;
     }
 
     .footer-languages a,
@@ -342,4 +415,228 @@
 }
 
 
+/* Normal Mobile */
+@media (max-width: 480px) {
+
+    .facebook-left {
+        padding: 60px 16px 15px;
+    }
+
+    .facebook-logo img {
+        width: 38px;
+    }
+
+    .facebook-logo-text {
+        gap: 20px;
+    }
+
+    .explore-text p {
+        font-size: clamp(27px, 7.5vw, 36px);
+    }
+
+    .facebook-illustration {
+        margin-top: 15px;
+    }
+
+    .facebook-right {
+        padding: 25px 16px;
+    }
+
+    .login-container {
+        padding: 5px;
+    }
+
+    .login-container h1 {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .login-container input {
+        padding: 14px;
+        border-radius: 12px;
+    }
+
+    .login-container form button {
+        padding: 12px;
+    }
+
+    .forgot-password {
+        margin-top: 18px;
+        font-size: 14px;
+    }
+
+    .forget-button,
+    .create-account {
+        margin-top: 20px;
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .facebook-footer {
+        padding: 20px 16px;
+    }
+
+    .footer-languages,
+    .footer-links {
+        gap: 8px 12px;
+    }
+
+    .footer-languages a,
+    .footer-links a {
+        font-size: 11px;
+    }
+}
+
+
+/* Small Mobile */
+@media (max-width: 360px) {
+
+    .back-home {
+        top: 12px;
+        left: 12px;
+        font-size: 12px;
+    }
+
+    .facebook-left {
+        padding: 55px 12px 12px;
+    }
+
+    .facebook-logo img {
+        width: 34px;
+    }
+
+    .facebook-logo-text {
+        gap: 16px;
+    }
+
+    .explore-text p {
+        font-size: clamp(24px, 7.5vw, 28px);
+    }
+
+    .facebook-illustration img {
+        width: 100%;
+    }
+
+    .facebook-right {
+        padding: 20px 12px;
+    }
+
+    .login-container {
+        padding: 4px;
+    }
+
+    .login-container h1 {
+        font-size: 15px;
+    }
+
+    .login-container input {
+        padding: 12px;
+        font-size: 13px;
+    }
+
+    .login-container form button {
+        padding: 11px;
+        font-size: 13px;
+    }
+
+    .forgot-password {
+        font-size: 13px;
+    }
+
+    .forget-button,
+    .create-account {
+        padding: 11px;
+        font-size: 13px;
+    }
+
+    .facebook-footer {
+        padding: 18px 12px;
+    }
+
+    .footer-languages,
+    .footer-links {
+        gap: 8px;
+    }
+
+    .footer-languages a,
+    .footer-links a {
+        font-size: 10px;
+    }
+}
+
+/* =========================
+   Mobile Layout Adjustment
+========================= */
+
+@media (max-width: 767px) {
+
+    .facebook-page {
+        min-height: 100vh;
+        height: auto;
+        overflow: visible;
+    }
+
+    .facebook-left {
+        padding: 55px 15px 10px;
+    }
+
+    .facebook-logo-text {
+        gap: 12px;
+    }
+
+    .explore-text {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .explore-text p {
+        margin: 4px 0;
+        font-size: clamp(22px, 5.5vw, 34px);
+        line-height: 1.1;
+        white-space: nowrap;
+    }
+
+    .facebook-illustration {
+        margin-top: 10px;
+    }
+
+    .facebook-illustration img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .facebook-right {
+        width: 100%;
+        padding: 15px 15px 25px;
+    }
+
+    .login-container {
+        width: 100%;
+        max-width: 420px;
+        padding: 5px;
+    }
+}
+
+
+/* Small Mobile */
+
+@media (max-width: 360px) {
+
+    .explore-text p {
+        font-size: clamp(19px, 5.5vw, 24px);
+    }
+
+    .facebook-illustration img {
+        max-width: 240px;
+    }
+
+    .facebook-right {
+        padding-top: 10px;
+    }
+
+    .login-container h1 {
+        font-size: 14px;
+    }
+}
 
