@@ -3,52 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Social Sites</title>
+    <title>My Social Sites</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
-    
 </head>
 <body>
-    <h1>Social Sites</h1>
-    <ul class="shortcuts">
-        <li class="facebook">
-            <a href="facebook.html">
-            <span class="tile"><img src="images/logo-facebook.svg" alt="facebook logo"></span>
-            <span class="label">facebook</span>
-            </a>
-            <button type="button" class="more" aria-label="more action for facebook.html">
-                <img src="images/more.svg" alt="">
-            </button>
-        </li>
-        <li>
-            <a href="google.html">
-                <span class="tile"><img src="images/logo-google.svg" alt="google logo"></span>
-                <span class="label">Google</span>
+    <!-- Animated background: aurora lights, twinkling stars and a moving grid -->
+    <div class="background" aria-hidden="true">
+        <span class="aurora aurora-blue"></span>
+        <span class="aurora aurora-pink"></span>
+        <span class="aurora aurora-cyan"></span>
+        <span class="aurora aurora-gold"></span>
+        <span class="stars"></span>
+        <span class="stars stars-far"></span>
+    </div>
 
-            </a>
-            <button type="button" class="more" aria-label="more action for google.html">
-                <img src="images/more.svg" alt="more logo">
-            </button>
-        </li>
-        <li>
-            <a href="instagram.html">
-                <span class="tile"><img src="images/logo-instagram.svg" alt="instagram logo"></span>
-                <span class="label">Instagram</span>
-            </a>
-            <button type="button" class="more" aria-label="more action for instagram.html">
-                <img src="images/more.svg" alt="">
-            </button>
-        </li>
-        <li>
-            <a href="linkedin.html">
-                <span class="tile"><img src="images/logo-linkedin.svg" alt="Instragram logo"></span>
-                <span class="label">Linkedin</span>
-            </a>
-            <button type="button" class="more" aria-label="more action for instragram.html">
-                <img src="images/more.svg" alt="">
-            </button>
-        </li>
-    </ul>
+    <!-- Hero -->
+    <header class="hero">
+        <p class="badge"><span class="badge-dot"></span>HTML &amp; CSS Project</p>
+        <h1 class="title">My <span class="title-gradient">Social Sites</span></h1>
+        <p class="subtitle">
+            Four famous websites, rebuilt from scratch with pure HTML and CSS.
+            Pick one and step inside.
+        </p>
+    </header>
 
+    <!-- Site cards -->
+    <main class="sites-area">
+        <nav aria-label="Social sites">
+            <ul class="sites">
+                <li class="site site-facebook">
+                    <a class="site-card" href="facebook.html">
+                        <span class="site-number" aria-hidden="true">01</span>
+                        <span class="site-icon">
+                            <img src="images/logo-facebook.svg" alt="">
+                        </span>
+                        <span class="site-name">Facebook</span>
+                        <span class="site-text">Connect with friends and family</span>
+                        <span class="site-link">Open page <span class="arrow" aria-hidden="true">→</span></span>
+                    </a>
+                </li>
+                <li class="site site-instagram">
+                    <a class="site-card" href="instagram.html">
+                        <span class="site-number" aria-hidden="true">02</span>
+                        <span class="site-icon">
+                            <img src="images/logo-instagram.svg" alt="">
+                        </span>
+                        <span class="site-name">Instagram</span>
+                        <span class="site-text">Share your favourite moments</span>
+                        <span class="site-link">Open page <span class="arrow" aria-hidden="true">→</span></span>
+                    </a>
+                </li>
+                <li class="site site-linkedin">
+                    <a class="site-card" href="linkedin.html">
+                        <span class="site-number" aria-hidden="true">03</span>
+                        <span class="site-icon">
+                            <img src="images/logo-linkedin.svg" alt="">
+                        </span>
+                        <span class="site-name">LinkedIn</span>
+                        <span class="site-text">Build your professional network</span>
+                        <span class="site-link">Open page <span class="arrow" aria-hidden="true">→</span></span>
+                    </a>
+                </li>
+                <li class="site site-google">
+                    <a class="site-card" href="google.html">
+                        <span class="site-number" aria-hidden="true">04</span>
+                        <span class="site-icon">
+                            <img src="images/logo-google.svg" alt="">
+                        </span>
+                        <span class="site-name">Google</span>
+                        <span class="site-text">Search anything, instantly</span>
+                        <span class="site-link">Open page <span class="arrow" aria-hidden="true">→</span></span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </main>
+
+    <footer class="footer">
+        <p>Made with <span class="heart">♥</span> using only HTML &amp; CSS</p>
+    </footer>
 </body>
 </html>
