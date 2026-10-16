@@ -63,7 +63,8 @@
     align-items: center;
 }
 .profile-stats strong {
-    font-size: 700;
+    font-size: 16px;
+    font-weight: 700;
 }
 .profile-bio {
     margin-top: 20px;
@@ -76,27 +77,62 @@
 .profile-bio p:first-child {
     font-weight: 600;
 }
-.photo-grid h2 {
-    margin: 0 0 20px;
-    text-align: start;
+.photo-grid {
+    width: 100%;
 }
-.photo-grid a h2 {
-    color: #4e1717;
-    text-decoration: none;
+/*------- instagram profile tab icons -----------*/
+.logo-svgs {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.logo-list {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 0;
+    list-style: none;
+}
+.logo-list li {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.logo-list li button {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border: 1px solid #bdb4b4;
+    border-radius: 50%;
+    background: transparent;
     cursor: pointer;
+    object-fit: cover;
 }
-.photo-grid a  h2:link {
-    color: #015893
+.logo-list li button img {
+    display: block;
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
 }
-.photo-grid a h2:visited {
-    color: #024619;
+.logo-list li button img.second-logo {
+    width: 27px;
+    height: 27px;
 }
-.photo-grid a h2:hover {
-    color:blueviolet
+.logo-list li button img.first-logo {
+    width: 26px;
+    height: 35px;
+    object-fit: fill;
 }
-.photo-grid a h2:active {
-    color: rgb(76, 74, 73);
+.logo-list li button:hover {
+    background-color: #e3e0e0;
 }
+
 .photo-lists {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -111,16 +147,164 @@
     object-fit: cover;
     display: block;
 }
-@media (max-width: 600px) {
+
+
+/* ---------- Responsive Design ---------- */
+
+/* Tablet and small laptop */
+@media (max-width: 768px) {
+    .instagram {
+        padding: 16px;
+    }
+
+    .profile-header {
+        gap: 30px;
+        padding: 30px 10px;
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+        flex-shrink: 0;
+    }
+
+    .profile-name {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .profile-name h1 {
+        font-size: 24px;
+        overflow-wrap: anywhere;
+    }
+
+    .profile-stats {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .logo-svgs {
+        max-width: 100%;
+    }
+
     .photo-lists {
-        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
     }
 }
 
+/* Mobile */
 @media (max-width: 600px) {
+    .instagram {
+        padding: 12px;
+    }
+
+    .instagram > a {
+        margin-bottom: 16px;
+    }
+
     .profile-header {
-        flex-direction: column;
+        gap: 16px;
+        padding: 20px 0;
         align-items: flex-start;
+    }
+
+    .profile-pic {
+        width: 80px;
+        height: 80px;
+        flex-shrink: 0;
+    }
+
+    .profile-info {
+        min-width: 0;
+    }
+
+    .profile-name {
+        gap: 8px;
+    }
+
+    .profile-name h1 {
+        font-size: 20px;
+        overflow-wrap: anywhere;
+    }
+
+    .button-follow {
+        padding: 7px 14px;
+        font-size: 13px;
+    }
+
+    .profile-stats {
+        justify-content: space-between;
+        gap: 8px;
+        margin: 16px 0;
+    }
+
+    .profile-stats li {
+        font-size: 13px;
+    }
+
+    .profile-stats strong {
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .profile-bio {
+        margin-top: 12px;
+        overflow-wrap: anywhere;
+    }
+
+    .profile-bio p {
+        font-size: 14px;
+    }
+
+    .logo-list {
+        margin-bottom: 8px;
+    }
+
+    .logo-list li button {
+        width: 36px;
+        height: 36px;
+    }
+
+    .logo-list li button img {
+        max-width: 22px;
+        max-height: 22px;
+    }
+
+    .photo-lists {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 3px;
+    }
+}
+
+/* Very small mobile */
+@media (max-width: 380px) {
+    .instagram {
+        padding: 8px;
+    }
+
+    .profile-header {
+        gap: 12px;
+    }
+
+    .profile-pic {
+        width: 64px;
+        height: 64px;
+    }
+
+    .profile-name h1 {
+        font-size: 17px;
+    }
+
+    .button-follow {
+        padding: 6px 10px;
+    }
+
+    .profile-stats {
+        gap: 5px;
+    }
+
+    .profile-stats li {
+        font-size: 12px;
     }
 }
 
